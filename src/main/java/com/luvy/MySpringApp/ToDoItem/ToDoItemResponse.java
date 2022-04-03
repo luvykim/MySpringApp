@@ -9,7 +9,7 @@ public class ToDoItemResponse extends ApiResponse<ToDoItem> {
     @Builder
     public ToDoItemResponse(final ToDoItem toDoItem, final List<String> errors){
         //ApiResponse의 data를 toDoItem으로 초기화
-        super(toDoItem);
+        this.setData(toDoItem);
         this.setErrors(errors);
     }
 }
