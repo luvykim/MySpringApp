@@ -10,7 +10,7 @@ public class ToDoItemService {
     @Autowired
     private ToDoItemRepository toDoItemRepository;
 
-    public ToDoItem get(final String id){
+    public ToDoItem get(final Long id){
 //        return ToDoItem.builder()
 //                .title("Add an id validation")
 //                .build();
