@@ -13,7 +13,7 @@ public class ToDoItemController {
     private ToDoItemService toDoItemService;
 
     @RequestMapping(method = RequestMethod.GET, value = "/{id}")
-    public @ResponseBody ToDoItemResponse get(@PathVariable(value="id") String id){
+    public @ResponseBody ToDoItemResponse get(@PathVariable(value="id") Long id){
         List<String> errors = new ArrayList<>();
         ToDoItem toDoItem = null;
         try {
